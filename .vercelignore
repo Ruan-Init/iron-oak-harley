@@ -1,12 +1,7 @@
-# Ignore everything except the web package (we want Vercel to build only packages/web)
-/*
-!packages/
-packages/*
-!packages/web/**
-
-# Node modules and local files
+# Only ignore local artifacts — keep the repo files so Vercel can build `packages/web`
 node_modules/
 **/node_modules
 .env
 .env.*
 .git
+.DS_Store
